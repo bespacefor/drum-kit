@@ -15,7 +15,7 @@ body {
 }
 
 .content {
-    background: url("../assets/img/pic.jpg") center / cover no-repeat;
+    background: url("../assets/img/1.jpg") center / cover no-repeat;
     min-height: 100vh;
     max-width: 100%;
 }
@@ -82,4 +82,96 @@ p {
     color: white;
     box-shadow: 0px 8px 16px 0 white, 0 6px 20px 0 white;
     text-shadow: 0 0 .3rem black;
+}
+
+@media (min-width: 768px) and (max-width: 1020px) {
+    .content_borders {
+        max-width: 1020px;
+    }
+
+    .keys {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+    .content_borders {
+        max-width: 768px;
+        background-color: rgb(102, 51, 0, .5);
+    }
+
+    .keys {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        background-color: transparent;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+    .content_borders {
+        max-width: 375px;
+        background-color: rgb(102, 51, 0, .5);
+    }
+
+    .keys {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin-top: 0;
+        background-color: transparent;
+    }
+
+    p {
+        bottom: .1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .content_borders {
+        max-width: 320px;
+        background-color: rgb(102, 51, 0, .5);
+    }
+
+    .keys {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        width: min-content;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        background-color: transparent;
+    }
+
+    p {
+        bottom: .1rem;
+    }
 }
