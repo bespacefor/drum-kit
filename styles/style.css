@@ -15,7 +15,7 @@ body {
 }
 
 .content {
-    background: url("../assets/img/1.jpg") center / cover no-repeat;
+    background: url("../assets/img/pic.jpg") center / cover no-repeat;
     min-height: 100vh;
     max-width: 100%;
 }
